@@ -1,0 +1,9 @@
+.fondo {
+    background: #f7faff;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.imagenUNAHUR {
+    clip-path: ellipse(40% 40% at 50% 50%);
+}

@@ -1,0 +1,8 @@
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 7rem;
+    background: #ffffff;
+    padding: 2rem;
+}
