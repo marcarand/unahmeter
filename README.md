@@ -19,32 +19,33 @@ Este servicioe normaliza una dirección de la Ciudad autonoma de Buenos Aires (C
 
 ### Utilización de la API:
 Parametros:
-    String direccion: Dirección a normalizar expresada como "calle altura, partido" o "calle y calle, partido".
-        El partido es opcional.
-    Int maxOptions: Cantidad máxima de resultados a devolver. (Opcional. Default: 10)
-    Bool geocodificar: Indica si se debe geocodificar los resultados de la normalización. (Opcional. Default: False)
-    Int srid: srid de la geocodificación. (Opcional. Default: 4326)
-    Float lat, lng: Devuelve la esquina mas cercana a la coordenada (latitud y longitud) ingresada.
-    String tipoResultado: determina el tipo de dirección del resultado. (Opcional. Default: calle_y_calle)
-        'calle_y_calle': Devuelve una dirección de tipo calle y calle.
-        'calle_altura': Devuelve una dirección de tipo calle altura.
-            Para CABA es la puerta mas cercana al punto.
-            Para Conurbano es la altura media del tramo de calle mas cercano.
-        'calle_altura_calle_y_calle': devuelve una dirección calle altura. En caso de no encontrarla, devuelve una dirección calle y calle.
+* String direccion: Dirección a normalizar expresada como "calle altura, partido" o "calle y calle, partido".
+   - El partido es opcional.
+* Int maxOptions: Cantidad máxima de resultados a devolver. (Opcional. Default: 10)
+* Bool geocodificar: Indica si se debe geocodificar los resultados de la normalización. (Opcional. Default: False)
+* Int srid: srid de la geocodificación. (Opcional. Default: 4326)
+* Float lat, lng: Devuelve la esquina mas cercana a la coordenada (latitud y longitud) ingresada.
+* String tipoResultado: determina el tipo de dirección del resultado. (Opcional. Default: calle_y_calle)
+    - 'calle_y_calle': Devuelve una dirección de tipo calle y calle.
+    - 'calle_altura': Devuelve una dirección de tipo calle altura.
+        - Para CABA es la puerta mas cercana al punto.
+        - Para Conurbano es la altura media del tramo de calle mas cercano.
+    - 'calle_altura_calle_y_calle': devuelve una dirección calle altura. En caso de no encontrarla, devuelve una dirección calle y calle.
 
 Ejemplos:
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe&geocodificar=TRUE](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe, san isidro)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle)
-        [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe&geocodificar=TRUE](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe, san isidro)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura)
 
 ## calcular la distancia:
 [https://ourcodeworld.co/articulos/leer/1021/como-calcular-la-distancia-entre-2-marcadores-coordenadas-en-google-maps-con-javascript](https://ourcodeworld.co/articulos/leer/1021/como-calcular-la-distancia-entre-2-marcadores-coordenadas-en-google-maps-con-javascript)
