@@ -10,11 +10,12 @@ function Buscador() {
     const [direccion, setDireccion] = useState("");
     const [direccionesNormalizadas, setDireccionesNormalizadas] = useState({});
 
-    const consultarAPI = async () => {
+    const consultarAPI = async (direccionActualizada) => {
         const urlBase = "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=";
-        const urlAPI = urlBase + direccion;
+        const urlAPI = urlBase + direccionActualizada;
 
         try {
+            setDistancia(0);
             const api = await fetch(urlAPI);
             const listadoAPI = await api.json();
             setDireccionesNormalizadas(listadoAPI.direccionesNormalizadas);
@@ -24,7 +25,7 @@ function Buscador() {
     };
 
     const calcularDistancia = () => {
-        consultarAPI();
+        consultarAPI(direccion);
         const cantidadDirecciones = {direccionesNormalizadas}.direccionesNormalizadas.length;
         if (cantidadDirecciones === 1) {
             const radioPlaneta = 6378.137;
@@ -60,8 +61,9 @@ function Buscador() {
     };
 
     const actualizaEstado = (e) => {
-        setDireccion(e.target.value);
-        consultarAPI();
+        const direccionActualizada = e.target.value;
+        setDireccion(direccionActualizada);
+        consultarAPI(direccionActualizada);
     }
 
     return (
