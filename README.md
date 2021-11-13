@@ -34,17 +34,28 @@ Parametros:
 
 Ejemplos:
 
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20caba)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20moron)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao ycorrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20caba)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20moron)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes%20y%20santa%20fe&geocodificar=TRUE](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes%20y%20santa%20fe,%20san%20isidro)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20e%20italia](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20e%20italia)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300,%20lomas](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300,%20lomas)
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe&geocodificar=TRUE](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes%20y%20santa%20fe,%20san%20isidro)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20e%20italia)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300,%20lomas)
+
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria%20300)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura)
 
 ## 0Calcular la distancia:
