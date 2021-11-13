@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# UNaH Meter
+## Tu distancia hasta UNAHUR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto para el segundo parcial del Construcción de Interface de Usuario del segundo cuatrimestre del 2021 de la Tecnicatura de Informática de la Universidad Nacional de Hurlingham.
+Estudiante: Carlos Andrés Martín
 
-## Available Scripts
+## Descripción de la aplicación.
 
-In the project directory, you can run:
+La página diseñada con React y Bootstrap permite ingresar una dirección en el buscador y calcular la distancia en línea recta hasta la Universidad Nacional de Hurlingham.
+El buscador permite ingresar el nombre de la calle y su altura o alternativamente su intersección, seguido de la ciudad o partido. La aplicación consulta el USIG (ver más abajo) y visualiza las sugerencias de direcciones aproximadas. Cuando se obtiene una única dirección, se puede presionar el botón de **Calcular** y la aplicación calcula y visualiza la distancia para cualquier ubicación del conurbano bonaerense o CABA.
 
-### `npm start`
+## API: USIG
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Utiliza [USIG](http://servicios.usig.buenosaires.gob.ar/normalizar) - Normalizador de Direcciones v2.1.2 que normaliza una dirección de la Ciudad autonoma de Buenos Aires (CABA) y/o Area Metropolitana de Buenos Aires (AMBA).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Utilización de la API:
+- Parametros:
+        String direccion: Dirección a normalizar expresada como "calle altura, partido" o "calle y calle, partido".
+            El partido es opcional.
+        Int maxOptions: Cantidad máxima de resultados a devolver. (Opcional. Default: 10)
+        Bool geocodificar: Indica si se debe geocodificar los resultados de la normalización. (Opcional. Default: False)
+        Int srid: srid de la geocodificación. (Opcional. Default: 4326)
+        Float lat, lng: Devuelve la esquina mas cercana a la coordenada (latitud y longitud) ingresada.
+        String tipoResultado: determina el tipo de dirección del resultado. (Opcional. Default: calle_y_calle)
+            'calle_y_calle': Devuelve una dirección de tipo calle y calle.
+            'calle_altura': Devuelve una dirección de tipo calle altura.
+                            Para CABA es la puerta mas cercana al punto.
+                            Para Conurbano es la altura media del tramo de calle mas cercano.
+            'calle_altura_calle_y_calle': devuelve una dirección calle altura. En caso de no encontrarla, devuelve una dirección calle y calle.
 
-### `npm test`
+    - Ejemplos:
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe&geocodificar=TRUE
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe, san isidro
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle
+        http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## calcular la distancia:
+https://ourcodeworld.co/articulos/leer/1021/como-calcular-la-distancia-entre-2-marcadores-coordenadas-en-google-maps-con-javascript
+https://reviblog.net/2016/01/08/javascript-obtener-la-distancia-distancia-en-kilometros-entre-dos-puntos-dadas-por-su-latitud-y-longitud/
