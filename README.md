@@ -34,7 +34,7 @@ Parametros:
 
 Ejemplos:
 
-[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao ycorrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20caba)
+[http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20caba)
 
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao%20y%20corrientes,%20moron)
 
