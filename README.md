@@ -35,16 +35,27 @@ Parametros:
 Ejemplos:
 
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, caba)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes, moron)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=callao y corrientes)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=santa&maxOptions=25)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe&geocodificar=TRUE](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=corrientes y santa fe, san isidro)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria e italia)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300, lomas)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300](http://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=loria 300)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.490674&lat=-34.524909)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.409039&lat=-34.601427)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_y_calle)
+
 [http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura](http://servicios.usig.buenosaires.gob.ar/normalizar/?lng=-58.402165&lat=-34.762920&tipoResultado=calle_altura)
 
 ## calcular la distancia:
